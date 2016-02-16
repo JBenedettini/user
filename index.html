@@ -2,22 +2,78 @@
 layout: default
 ---
 
-<div class="home">
+    {% include header.html %}
 
-  <h1 class="page-heading">Posts</h1>
+    <div id="fullPageCover" class="contianer-fluid" style="background-image: url('{{ site.baseurl }}/assets/images/newbg.jpg')">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <div id="profile" class="animated fadeInDown">
+        
+        <div class="name-card">
+          <h1>Joseph Benedettini</h1>
+        </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+        <div id="about-me">
+        <h4>About Me</h4>
+        <p>Im a freelance Developer/Designer with a passion for the backend. Experienced
+  in enterprise level web devlopment. Fluent in Javascript, HTML5, CSS3, and Apples Swift.
+  Uses Angular 1-2, Node.js, Socket.io, JSON Web Tokens, Express, Sails, and much more.</p>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+        </div>
 
-</div>
+        <div class="row hidden-sm-down">
+        
+        <div id="point" class="col-xs-12 col-md-4">
+        <h4>Languages</h4>
+        <ul class="list-group">
+        <li class="list-group-item">Javascript</li>
+        <li class="list-group-item">HTML5</li>
+        <li class="list-group-item">CSS3</li>
+        <li class="list-group-item">PHP</li>
+        <li class="list-group-item">Swift</li>
+        <li class="list-group-item">SQL / noSQL</li>
+        </ul>
+        </div>
+
+        <div id="point" class="col-xs-12 col-md-4">
+        <h4>Technologies</h4>
+        <ul class="list-group">
+        <li class="list-group-item">Angular 1/2</li>
+        <li class="list-group-item">JQuery</li>
+        <li class="list-group-item">Node.js (Express/Sails)</li>
+        <li class="list-group-item">xCode</li>
+        <li class="list-group-item">MongoDB/MSSQL/MySQL</li>
+        </ul>
+        </div>
+
+        <div id="point" class="col-xs-12 col-md-4">
+        <h4>Usage</h4>
+        <ul class="list-group">
+        <li class="list-group-item">Front End 40%
+        <progress class="progress" value="40" max="100">40%</progress>
+        </li>
+        <li class="list-group-item">Back End 50%
+        <progress class="progress" value="50" max="100">50%</progress>
+        </li>
+        <li class="list-group-item">iOS Apps 10%
+        <progress class="progress" value="10" max="100">10%</progress>
+        </li>
+        </ul>
+        </div>
+
+
+        </div>
+        <div id="socialIcons" class="container-fluid">
+        <div>
+          <h4><i class="fa fa-instagram"></i> | <i class="fa fa-github"></i> | <i class="fa fa-youtube"></i></h4>
+        </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+    {% include footer.html %}
+
+
