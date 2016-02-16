@@ -23,7 +23,7 @@
 
     <div id="fullPageCover" class="contianer-fluid" style="background-image: url('/user/assets/images/newbg.jpg')">
 
-      <div id="profile" class="animated fadeInDown">
+      <div id="profile" class="wow fadeInDown" data-wow-delay="1s">
         
         <div class="name-card">
           <h1>Joseph Benedettini</h1>
@@ -37,7 +37,7 @@
 
         </div>
 
-        <div class="row hidden-sm-down">
+        <div class="row hidden-sm-down wow bounceInUp" data-wow-delay="2s">
         
         <div id="point" class="col-xs-12 col-md-4">
         <h4>Languages</h4>
@@ -96,6 +96,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="/user/assets/js/tether.min.js"></script>
   <script src="/user/assets/js/bootstrap.min.js"></script>
+  <script src="/user/assets/js/wow.min.js"></script>
+
+  <script>
+  	new WOW().init();
+  </script>
 
 </footer>
 
